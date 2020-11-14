@@ -49,6 +49,10 @@ body {
         border-radius: 10px 90px 10px 10px;
         align-self: flex-end;
 
+        .logo{
+            margin-bottom: 20px;
+        }
+        
         .icon {
             img {
                 padding: 15px 13px;
@@ -131,6 +135,7 @@ body {
         &__files {
             flex: 4;
             padding: 40px;
+
         }
 
         &__storage {

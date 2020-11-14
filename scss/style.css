@@ -61,6 +61,10 @@ body {
       align-self: flex-end;
 }
 
+.container__files .logo {
+  margin-bottom: 20px;
+}
+
 .container__files .icon img {
   padding: 15px 13px;
   border-radius: 10px;
