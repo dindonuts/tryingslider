@@ -1,0 +1,203 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background-color: #0c122c;
+  color: #dddbff;
+  background-image: url("/images/bg-mobile.png");
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+@media (min-width: 64em) {
+  body {
+    background-image: url("/images/bg-desktop.png");
+    background-position: 0% 130%;
+    background-size: 110%;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  padding: 1.575rem;
+}
+
+.container__files, .container__storage {
+  background-color: #1d2c67;
+}
+
+.container__files {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 40px;
+  border-radius: 10px 90px 10px 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.container__files .icon img {
+  padding: 15px 13px;
+  border-radius: 10px;
+  background-color: #0c122c;
+  height: 55px;
+  margin-right: 15px;
+}
+
+.container__files .icon :first-child {
+  padding: 15px 18px;
+}
+
+.container__files .icon :last-child {
+  padding: 15px 12px;
+}
+
+.container__storage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.container__storage .pop-up {
+  position: absolute;
+  z-index: 3;
+  top: 53%;
+  right: 15%;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px 10px 0 10px;
+}
+
+.container__storage .pop-up b {
+  font-size: 20px;
+}
+
+.container__storage .pop-up .arrow {
+  z-index: 4;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  width: 17px;
+  height: 20px;
+  border-top: 10px solid white;
+  border-left: 15px solid transparent;
+}
+
+.container__storage .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  font-weight: 700;
+}
+
+.container__storage .value * {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.container__storage .value :last-child {
+  text-align: right;
+}
+
+@media (min-width: 64em) {
+  .container {
+    width: 56.25rem;
+    height: 41%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .container__files, .container__storage {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .container__files {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    padding: 40px;
+  }
+  .container__storage {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .container__storage .pop-up {
+    top: 46%;
+    right: 24%;
+  }
+}
+
+.container input[type="range"] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: -webkit-linear-gradient(right, #ff4d97, #ffa399);
+  /* Otherwise white in Chrome */
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #0c122c;
+}
+
+.container input[type="range"]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.container input[type="range"]::-webkit-slider-runnable-track {
+  height: 14px;
+  -webkit-appearance: none;
+  border-radius: 5px;
+}
+
+.container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  border-radius: 7px;
+  background: #ffffff;
+  border: 3px solid #ff4d97;
+  overflow: hidden;
+  -webkit-box-shadow: 17.5rem 0 0 17rem #0c122c;
+          box-shadow: 17.5rem 0 0 17rem #0c122c;
+}
+/*# sourceMappingURL=style.css.map */
