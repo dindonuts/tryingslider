@@ -52,7 +52,7 @@ body {
         .logo{
             margin-bottom: 20px;
         }
-        
+
         .icon {
             img {
                 padding: 15px 13px;
@@ -82,7 +82,7 @@ body {
         .pop-up {
             position: absolute;
             z-index: 3;
-            top: 53%;
+            top: 50%;
             right: 15%;
             background: white;
             color: black;
@@ -90,7 +90,7 @@ body {
             border-radius: 10px 10px 0 10px;
 
             b {
-                font-size: 20px;
+                font-size: 34px;
             }
 
             .arrow {
@@ -145,7 +145,7 @@ body {
             text-align: left;
 
             .pop-up{
-                top: 46%;
+                top: 44%;
                 right: 24%;
             }
         }
